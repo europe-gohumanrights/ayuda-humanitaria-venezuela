@@ -313,7 +313,7 @@
       font-size: 0.96rem;
     }
 
-    .verification-item span {
+    .verification-item span:first-child {
       width: 22px;
       height: 22px;
       min-width: 22px;
@@ -690,7 +690,6 @@
         <div class="brand">
           <img src="logo-wzg.jpg" alt="Logo Whyrlin Zamora Gil">
           <div>
-            <small>Dirección y curaduría institucional</small>
             <strong>Whyrlin Zamora Gil</strong>
           </div>
         </div>
@@ -757,32 +756,32 @@
 
         <article class="panel">
           <h2>
-            <span class="lang-es">Criterios de publicación</span>
-            <span class="lang-de hidden">Aufnahmekriterien</span>
+            <span class="lang-es">Criterios de verificación</span>
+            <span class="lang-de hidden">Prüfkriterien</span>
           </h2>
 
           <div class="verification-list">
             <div class="verification-item">
               <span>1</span>
               <div>
-                <span class="lang-es">Enlaces dirigidos a páginas oficiales.</span>
-                <span class="lang-de hidden">Links führen zu offiziellen Webseiten.</span>
+                <span class="lang-es">La información procede de páginas oficiales o canales públicos de las organizaciones.</span>
+                <span class="lang-de hidden">Die Informationen stammen aus offiziellen Webseiten oder öffentlichen Kanälen der Organisationen.</span>
               </div>
             </div>
 
             <div class="verification-item">
               <span>2</span>
               <div>
-                <span class="lang-es">Datos públicos de contacto o servicio de donantes.</span>
-                <span class="lang-de hidden">Öffentliche Kontakt- oder Spendenservice-Daten.</span>
+                <span class="lang-es">Los datos de contacto corresponden a servicios institucionales, áreas de donantes o canales generales publicados.</span>
+                <span class="lang-de hidden">Die Kontaktdaten beziehen sich auf institutionelle Dienste, Spendenservice-Stellen oder veröffentlichte allgemeine Kontaktkanäle.</span>
               </div>
             </div>
 
             <div class="verification-item">
               <span>3</span>
               <div>
-                <span class="lang-es">Sin intermediación de pagos por parte de esta página.</span>
-                <span class="lang-de hidden">Keine Zahlungsabwicklung durch diese Seite.</span>
+                <span class="lang-es">Esta página no recibe, procesa ni intermedia donaciones; cada aporte se realiza directamente en el sitio oficial elegido.</span>
+                <span class="lang-de hidden">Diese Seite nimmt keine Spenden entgegen, verarbeitet keine Zahlungen und vermittelt keine Spenden; jede Unterstützung erfolgt direkt über die ausgewählte offizielle Webseite.</span>
               </div>
             </div>
           </div>
@@ -903,7 +902,7 @@
             </div>
           </article>
 
-          <article class="card" data-category="alemania infancia emergencia" data-keywords="world vision deutschland katastrophenhilfe venezuela servíceteam">
+          <article class="card" data-category="alemania infancia emergencia" data-keywords="world vision deutschland katastrophenhilfe venezuela serviceteam">
             <div class="card-top">
               <span class="tag">Infancia</span>
               <span class="country">Alemania</span>
@@ -1207,6 +1206,8 @@
         categoryFilter.options[4].text = 'Infancia y familias';
         categoryFilter.options[5].text = 'Emergencia humanitaria';
       }
+
+      filterCards();
     }
 
     function normalizeText(text) {
