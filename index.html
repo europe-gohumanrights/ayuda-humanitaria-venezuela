@@ -793,12 +793,13 @@
           >
 
           <select id="categoryFilter" class="filter-select" onchange="filterCards()">
-            <option value="all">Todas las organizaciones</option>
+            <option value="all">Todas las organizaciones y fuentes</option>
             <option value="gohr">GOHR</option>
             <option value="onu">Sistema ONU / Naciones Unidas</option>
             <option value="alemania">Organizaciones con sede o presencia en Alemania</option>
             <option value="infancia">Infancia y familias</option>
             <option value="emergencia">Emergencia humanitaria</option>
+            <option value="fuente">Fuentes informativas verificables</option>
           </select>
         </div>
       </section>
@@ -807,11 +808,11 @@
         <div class="section-head">
           <div>
             <h2>
-              <span class="lang-es">Directorio de organizaciones</span>
-              <span class="lang-de hidden">Verzeichnis der Organisationen</span>
+              <span class="lang-es">Directorio de organizaciones y fuentes</span>
+              <span class="lang-de hidden">Verzeichnis der Organisationen und Quellen</span>
             </h2>
-            <p class="lang-es">Selecciona una organización para donar directamente desde su sitio oficial.</p>
-            <p class="lang-de hidden">Wählen Sie eine Organisation aus, um direkt über die offizielle Webseite zu spenden.</p>
+            <p class="lang-es">Selecciona una organización para donar directamente desde su sitio oficial o consulta fuentes informativas verificables.</p>
+            <p class="lang-de hidden">Wählen Sie eine Organisation aus, um direkt über die offizielle Webseite zu spenden, oder prüfen Sie verlässliche Informationsquellen.</p>
           </div>
 
           <div id="resultCount" class="result-count"></div>
@@ -1086,10 +1087,53 @@
             </div>
           </article>
 
+          <article class="card" data-category="alemania emergencia" data-keywords="aktion deutschland hilft erdbeben venezuela spenden jetzt nothilfe bündnis hilfsorganisationen servicetelefon">
+            <div class="card-top">
+              <span class="tag">Alianza humanitaria</span>
+              <span class="country">Alemania</span>
+            </div>
+            <h3>Aktion Deutschland Hilft</h3>
+            <p class="campaign">Erdbeben Venezuela: Spenden Sie jetzt!</p>
+            <div class="meta">
+              <div><strong>Sitio web</strong><a href="https://www.aktion-deutschland-hilft.de" target="_blank" rel="noopener">www.aktion-deutschland-hilft.de</a></div>
+              <div><strong>Correo</strong>Usar formulario oficial de contacto</div>
+              <div><strong>Teléfono</strong><a href="tel:+4922824292444">+49 228 24292-444</a></div>
+              <div><strong>Contacto</strong>Spenderservice / Servicetelefon</div>
+              <div><strong>Cuenta publicada</strong>IBAN: DE62 3702 0500 0000 1020 30</div>
+              <div><strong>Concepto</strong>Erdbeben Venezuela</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-blue" href="https://www.aktion-deutschland-hilft.de/de/hilfseinsaetze/erdbeben-venezuela-spenden-sie-jetzt/" target="_blank" rel="noopener">Donar</a>
+              <a class="btn btn-outline" href="https://www.aktion-deutschland-hilft.de" target="_blank" rel="noopener">Sitio oficial</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="alemania emergencia fuente" data-keywords="tagesschau ard spendenkonten venezuela spendenkonto bündnis entwicklung hilft aktion deutschland hilft beh adh">
+            <div class="card-top">
+              <span class="tag">Fuente informativa</span>
+              <span class="country">Alemania</span>
+            </div>
+            <h3>tagesschau / ARD Spendenkonten</h3>
+            <p class="campaign">Spenden: Hilfe für die Menschen in Venezuela</p>
+            <div class="meta">
+              <div><strong>Sitio web</strong><a href="https://www.tagesschau.de" target="_blank" rel="noopener">www.tagesschau.de</a></div>
+              <div><strong>Tipo</strong>Listado informativo de cuentas de donación publicadas por ARD/tagesschau</div>
+              <div><strong>Cuenta principal publicada</strong>BEH und ADH · IBAN: DE53 200 400 600 200 400 600</div>
+              <div><strong>BIC</strong>COBADEFFXXX</div>
+              <div><strong>Banco</strong>Commerzbank</div>
+              <div><strong>Concepto</strong>ARD/ Venezuela</div>
+              <div><strong>Nota</strong>tagesschau no procesa donaciones; remite a organizaciones y cuentas publicadas.</div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-blue" href="https://www.tagesschau.de/spendenkonten/spendenkonten-162.html" target="_blank" rel="noopener">Ver listado</a>
+              <a class="btn btn-outline" href="https://www.tagesschau.de" target="_blank" rel="noopener">Sitio oficial</a>
+            </div>
+          </article>
+
         </div>
 
         <div id="noResults" class="no-results">
-          No se encontraron organizaciones con ese criterio de búsqueda.
+          No se encontraron organizaciones o fuentes con ese criterio de búsqueda.
         </div>
       </section>
 
@@ -1139,11 +1183,11 @@
           </h2>
 
           <p class="lang-es">
-            Este sitio únicamente recopila y organiza información pública disponible en páginas oficiales de organizaciones y campañas de ayuda humanitaria. Guardians of Human Rights Foundation, GOHR Europe y el administrador de esta página no procesan donaciones, no intermedian pagos y no garantizan cambios, actualizaciones o disponibilidad de información publicada por terceros. La decisión de donar corresponde exclusivamente a cada usuario, bajo su propio criterio y responsabilidad.
+            Este sitio únicamente recopila y organiza información pública disponible en páginas oficiales de organizaciones, fuentes informativas y campañas de ayuda humanitaria. Guardians of Human Rights Foundation, GOHR Europe y el administrador de esta página no procesan donaciones, no intermedian pagos y no garantizan cambios, actualizaciones o disponibilidad de información publicada por terceros. La decisión de donar corresponde exclusivamente a cada usuario, bajo su propio criterio y responsabilidad.
           </p>
 
           <p class="lang-de hidden">
-            Diese Seite sammelt und ordnet ausschließlich öffentlich verfügbare Informationen von offiziellen Webseiten humanitärer Organisationen und Hilfskampagnen. Guardians of Human Rights Foundation, GOHR Europe und der Betreiber dieser Seite verarbeiten keine Spenden, vermitteln keine Zahlungen und übernehmen keine Garantie für Änderungen, Aktualisierungen oder die Verfügbarkeit von Informationen Dritter. Die Entscheidung zu spenden liegt ausschließlich bei den Nutzerinnen und Nutzern in eigener Verantwortung.
+            Diese Seite sammelt und ordnet ausschließlich öffentlich verfügbare Informationen von offiziellen Webseiten, Informationsquellen, humanitären Organisationen und Hilfskampagnen. Guardians of Human Rights Foundation, GOHR Europe und der Betreiber dieser Seite verarbeiten keine Spenden, vermitteln keine Zahlungen und übernehmen keine Garantie für Änderungen, Aktualisierungen oder die Verfügbarkeit von Informationen Dritter. Die Entscheidung zu spenden liegt ausschließlich bei den Nutzerinnen und Nutzern in eigener Verantwortung.
           </p>
         </article>
       </section>
@@ -1177,28 +1221,30 @@
         btnEs.classList.remove('active');
         btnDe.classList.add('active');
         document.documentElement.lang = 'de';
-        searchInput.placeholder = 'Organisation, Kampagne oder Kontakt suchen...';
+        searchInput.placeholder = 'Organisation, Kampagne, Quelle oder Kontakt suchen...';
 
-        categoryFilter.options[0].text = 'Alle Organisationen';
+        categoryFilter.options[0].text = 'Alle Organisationen und Quellen';
         categoryFilter.options[1].text = 'GOHR';
         categoryFilter.options[2].text = 'UN-System / Vereinte Nationen';
         categoryFilter.options[3].text = 'Organisationen mit Sitz oder Präsenz in Deutschland';
         categoryFilter.options[4].text = 'Kinder und Familien';
         categoryFilter.options[5].text = 'Humanitäre Nothilfe';
+        categoryFilter.options[6].text = 'Verlässliche Informationsquellen';
       } else {
         esElements.forEach(el => el.classList.remove('hidden'));
         deElements.forEach(el => el.classList.add('hidden'));
         btnEs.classList.add('active');
         btnDe.classList.remove('active');
         document.documentElement.lang = 'es';
-        searchInput.placeholder = 'Buscar organización, campaña o contacto...';
+        searchInput.placeholder = 'Buscar organización, campaña, fuente o contacto...';
 
-        categoryFilter.options[0].text = 'Todas las organizaciones';
+        categoryFilter.options[0].text = 'Todas las organizaciones y fuentes';
         categoryFilter.options[1].text = 'GOHR';
         categoryFilter.options[2].text = 'Sistema ONU / Naciones Unidas';
         categoryFilter.options[3].text = 'Organizaciones con sede o presencia en Alemania';
         categoryFilter.options[4].text = 'Infancia y familias';
         categoryFilter.options[5].text = 'Emergencia humanitaria';
+        categoryFilter.options[6].text = 'Fuentes informativas verificables';
       }
 
       filterCards();
@@ -1239,18 +1285,18 @@
 
       const lang = document.documentElement.lang;
       resultCount.textContent = lang === 'de'
-        ? visibleCount + ' Organisationen angezeigt'
-        : visibleCount + ' organizaciones visibles';
+        ? visibleCount + ' Einträge angezeigt'
+        : visibleCount + ' entradas visibles';
     }
 
     function getShareText() {
       const lang = document.documentElement.lang;
 
       if (lang === 'de') {
-        return 'Offizielles Informationsverzeichnis mit Spendenlinks für humanitäre Hilfe in Venezuela: ';
+        return 'Informationsverzeichnis mit offiziellen Spendenlinks und verlässlichen Quellen für humanitäre Hilfe in Venezuela: ';
       }
 
-      return 'Directorio informativo con enlaces oficiales de donación para la ayuda humanitaria a Venezuela: ';
+      return 'Directorio informativo con enlaces oficiales de donación y fuentes verificables para la ayuda humanitaria a Venezuela: ';
     }
 
     function getCurrentUrl() {
