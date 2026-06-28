@@ -6,7 +6,7 @@
 
   <title>Ayuda Humanitaria para Venezuela | Directorio Oficial de Donaciones</title>
 
-  <meta name="description" content="Directorio centralizado de organizaciones con sede o presencia en Alemania y campañas oficiales de donación para la ayuda humanitaria a Venezuela." />
+  <meta name="description" content="Directorio centralizado de organizaciones, campañas oficiales, fuentes verificables y campañas públicas de ayuda humanitaria para Venezuela." />
 
   <style>
     :root {
@@ -21,6 +21,8 @@
       --border: #d9e2ef;
       --soft-blue: #eaf3fc;
       --soft-gold: #fbf6e8;
+      --soft-green: #edf8f1;
+      --soft-red: #fff4ee;
       --danger-soft: #fff7e7;
       --shadow: 0 16px 40px rgba(7, 26, 51, 0.10);
       --radius: 20px;
@@ -329,6 +331,17 @@
       font-size: 0.95rem;
     }
 
+    .update-box {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: var(--soft-gold);
+      border: 1px solid #eedfa9;
+      color: #5f4712;
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
     .controls {
       position: sticky;
       top: 0;
@@ -342,7 +355,7 @@
 
     .controls-box {
       display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
       gap: 12px;
       align-items: center;
     }
@@ -387,6 +400,36 @@
     .result-count {
       color: var(--muted);
       font-weight: 700;
+    }
+
+    .country-section {
+      margin-top: 28px;
+    }
+
+    .country-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+      padding: 16px 18px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--gold);
+      border-radius: 18px;
+      box-shadow: 0 8px 22px rgba(7, 26, 51, 0.06);
+    }
+
+    .country-title h3 {
+      color: var(--navy);
+      font-size: 1.35rem;
+    }
+
+    .country-count {
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 0.92rem;
     }
 
     .grid {
@@ -440,6 +483,18 @@
       letter-spacing: 0.35px;
     }
 
+    .tag.crowdfunding {
+      background: var(--soft-red);
+      color: #8a3d1e;
+      border-color: #f1c7b5;
+    }
+
+    .tag.source {
+      background: var(--soft-green);
+      color: #1f6b3b;
+      border-color: #c5e8d0;
+    }
+
     .country {
       display: inline-flex;
       align-items: center;
@@ -451,7 +506,7 @@
       font-weight: 900;
     }
 
-    .card h3 {
+    .card h4 {
       font-size: 1.22rem;
       line-height: 1.25;
       color: var(--navy);
@@ -482,6 +537,17 @@
       font-size: 0.81rem;
       text-transform: uppercase;
       letter-spacing: 0.4px;
+    }
+
+    .warning-note {
+      margin: 8px 0 16px;
+      padding: 12px 13px;
+      border-radius: 14px;
+      background: var(--danger-soft);
+      border: 1px solid #ead9ad;
+      color: #514119;
+      font-size: 0.92rem;
+      font-weight: 700;
     }
 
     .actions {
@@ -605,9 +671,10 @@
       color: var(--muted);
       font-weight: 700;
       display: none;
+      margin-top: 20px;
     }
 
-    @media (max-width: 820px) {
+    @media (max-width: 900px) {
       .intro-grid,
       .contact-section,
       .controls-box {
@@ -665,8 +732,8 @@
   <div class="top-strip">
     <div class="container">
       <div>
-        <span class="lang-es">Directorio informativo · Enlaces oficiales de donación · Venezuela</span>
-        <span class="lang-de hidden">Informationsverzeichnis · Offizielle Spendenlinks · Venezuela</span>
+        <span class="lang-es">Directorio informativo · Enlaces oficiales, campañas y fuentes verificables · Venezuela</span>
+        <span class="lang-de hidden">Informationsverzeichnis · Offizielle Links, Kampagnen und verlässliche Quellen · Venezuela</span>
       </div>
 
       <div class="language-switch">
@@ -697,31 +764,30 @@
 
       <section class="hero">
         <div class="eyebrow">
-          <span class="lang-es">Ayuda humanitaria verificada</span>
-          <span class="lang-de hidden">Verifizierte humanitäre Hilfe</span>
+          <span class="lang-es">Ayuda humanitaria · Información organizada por país</span>
+          <span class="lang-de hidden">Humanitäre Hilfe · Nach Ländern geordnet</span>
         </div>
 
         <h1>
-          <span class="lang-es">Organizaciones y campañas oficiales de ayuda humanitaria para Venezuela</span>
-          <span class="lang-de hidden">Organisationen und offizielle Hilfskampagnen für Venezuela</span>
+          <span class="lang-es">Directorio de ayuda humanitaria para Venezuela</span>
+          <span class="lang-de hidden">Verzeichnis humanitärer Hilfe für Venezuela</span>
         </h1>
 
         <p class="lang-es">
-          Esta página reúne en un solo lugar enlaces oficiales de organizaciones con sede o presencia en Alemania
-          y campañas internacionales de donación para asistir a las personas afectadas por la catástrofe en Venezuela.
-          La finalidad es facilitar un acceso claro, ordenado y confiable a canales oficiales de ayuda.
+          Esta página reúne enlaces oficiales, campañas institucionales, fuentes informativas verificables y campañas públicas de apoyo
+          para asistir a las personas afectadas por la emergencia en Venezuela. Las entradas están organizadas por país y en orden alfabético
+          para facilitar su consulta.
         </p>
 
         <p class="lang-de hidden">
-          Diese Seite bündelt offizielle Spendenlinks von Organisationen mit Sitz oder Präsenz in Deutschland sowie
-          internationale Hilfskampagnen zur Unterstützung der von der Katastrophe in Venezuela betroffenen Menschen.
-          Ziel ist ein klarer, geordneter und vertrauenswürdiger Zugang zu offiziellen Hilfskanälen.
+          Diese Seite bündelt offizielle Links, institutionelle Kampagnen, verlässliche Informationsquellen und öffentliche Hilfskampagnen
+          zur Unterstützung der von der Notsituation in Venezuela betroffenen Menschen. Die Einträge sind nach Ländern und alphabetisch geordnet.
         </p>
 
         <div class="hero-actions">
           <a href="#directorio" class="btn btn-primary">
-            <span class="lang-es">Ver organizaciones</span>
-            <span class="lang-de hidden">Organisationen anzeigen</span>
+            <span class="lang-es">Ver directorio</span>
+            <span class="lang-de hidden">Verzeichnis anzeigen</span>
           </a>
 
           <a href="#compartir" class="btn btn-light">
@@ -744,14 +810,19 @@
           </h2>
 
           <p class="lang-es">
-            Es un directorio centralizado de campañas oficiales de donación, creado para reducir la dispersión de información,
-            evitar enlaces dudosos y orientar a la ciudadanía hacia canales institucionales de ayuda humanitaria.
+            Es un directorio centralizado de organizaciones, campañas y fuentes públicas de ayuda humanitaria para Venezuela.
+            Su finalidad es reducir la dispersión de información, orientar hacia canales verificables y facilitar una consulta responsable.
           </p>
 
           <p class="lang-de hidden">
-            Es handelt sich um ein zentrales Verzeichnis offizieller Spendenkampagnen, das die Streuung von Informationen
-            reduzieren, zweifelhafte Links vermeiden und die Öffentlichkeit zu institutionellen Kanälen humanitärer Hilfe führen soll.
+            Es handelt sich um ein zentrales Verzeichnis von Organisationen, Kampagnen und öffentlichen Quellen humanitärer Hilfe für Venezuela.
+            Ziel ist es, die Streuung von Informationen zu reduzieren und den Zugang zu überprüfbaren Kanälen zu erleichtern.
           </p>
+
+          <div class="update-box">
+            <span class="lang-es">Última actualización: domingo 28 de junio de 2026, 21:46 h. Berlín/Alemania.</span>
+            <span class="lang-de hidden">Letzte Aktualisierung: Sonntag, 28. Juni 2026, 21:46 Uhr Berlin/Deutschland.</span>
+          </div>
         </article>
 
         <article class="panel">
@@ -761,23 +832,21 @@
           </h2>
 
           <p class="lang-es">
-            La información incluida en este directorio procede de páginas oficiales, formularios públicos de donación
-            o canales institucionales de contacto publicados por cada organización. Esta página no certifica, modifica
-            ni sustituye la información original de terceros.
+            La información procede de páginas oficiales, formularios públicos de donación, plataformas reconocidas o fuentes informativas verificables.
+            Las campañas de crowdfunding se identifican como tales y no equivalen a una certificación institucional adicional.
           </p>
 
           <div class="note-box lang-es">
-            Las donaciones deben realizarse únicamente desde el sitio oficial de la organización elegida.
+            Las donaciones deben realizarse únicamente desde el sitio oficial o plataforma indicada para cada entrada. Esta página no procesa donaciones ni intermedia pagos.
           </div>
 
           <p class="lang-de hidden">
-            Die in diesem Verzeichnis enthaltenen Informationen stammen aus offiziellen Webseiten, öffentlichen Spendenformularen
-            oder institutionellen Kontaktkanälen der jeweiligen Organisation. Diese Seite zertifiziert, verändert oder ersetzt
-            keine Originalinformationen Dritter.
+            Die Informationen stammen aus offiziellen Webseiten, öffentlichen Spendenformularen, anerkannten Plattformen oder verlässlichen Informationsquellen.
+            Crowdfunding-Kampagnen werden entsprechend gekennzeichnet und stellen keine zusätzliche institutionelle Zertifizierung dar.
           </p>
 
           <div class="note-box lang-de hidden">
-            Spenden sollten ausschließlich über die offizielle Webseite der ausgewählten Organisation erfolgen.
+            Spenden sollten ausschließlich über die offizielle Webseite oder die angegebene Plattform des jeweiligen Eintrags erfolgen. Diese Seite verarbeitet keine Spenden und vermittelt keine Zahlungen.
           </div>
         </article>
       </section>
@@ -788,18 +857,28 @@
             id="searchInput"
             class="search-input"
             type="search"
-            placeholder="Buscar organización, campaña o contacto..."
-            oninput="filterCards()"
+            placeholder="Buscar organización, campaña, país, fuente o contacto..."
+            oninput="renderDirectory()"
           >
 
-          <select id="categoryFilter" class="filter-select" onchange="filterCards()">
-            <option value="all">Todas las organizaciones y fuentes</option>
-            <option value="gohr">GOHR</option>
+          <select id="countryFilter" class="filter-select" onchange="renderDirectory()">
+            <option value="all">Todos los países</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Europa">Europa</option>
+            <option value="Internacional / Sistema ONU">Internacional / Sistema ONU</option>
+            <option value="Reino Unido">Reino Unido</option>
+          </select>
+
+          <select id="categoryFilter" class="filter-select" onchange="renderDirectory()">
+            <option value="all">Todas las categorías</option>
+            <option value="oficial">Organizaciones / campañas institucionales</option>
+            <option value="crowdfunding">Crowdfunding / campañas públicas</option>
+            <option value="fuente">Fuentes informativas verificables</option>
             <option value="onu">Sistema ONU / Naciones Unidas</option>
-            <option value="alemania">Organizaciones con sede o presencia en Alemania</option>
             <option value="infancia">Infancia y familias</option>
             <option value="emergencia">Emergencia humanitaria</option>
-            <option value="fuente">Fuentes informativas verificables</option>
+            <option value="gohr">GOHR</option>
           </select>
         </div>
       </section>
@@ -808,332 +887,20 @@
         <div class="section-head">
           <div>
             <h2>
-              <span class="lang-es">Directorio de organizaciones y fuentes</span>
-              <span class="lang-de hidden">Verzeichnis der Organisationen und Quellen</span>
+              <span class="lang-es">Directorio por país y orden alfabético</span>
+              <span class="lang-de hidden">Verzeichnis nach Ländern und alphabetisch geordnet</span>
             </h2>
-            <p class="lang-es">Selecciona una organización para donar directamente desde su sitio oficial o consulta fuentes informativas verificables.</p>
-            <p class="lang-de hidden">Wählen Sie eine Organisation aus, um direkt über die offizielle Webseite zu spenden, oder prüfen Sie verlässliche Informationsquellen.</p>
+            <p class="lang-es">Consulta cada entrada y dona directamente desde el sitio oficial o plataforma correspondiente.</p>
+            <p class="lang-de hidden">Prüfen Sie jeden Eintrag und spenden Sie direkt über die jeweilige offizielle Webseite oder Plattform.</p>
           </div>
 
           <div id="resultCount" class="result-count"></div>
         </div>
 
-        <div class="grid" id="cardsGrid">
-
-          <article class="card" data-category="onu infancia emergencia" data-keywords="unicef deutschland erdbeben venezuela kinder spendenservice">
-            <div class="card-top">
-              <span class="tag">ONU / Infancia</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>UNICEF Deutschland</h3>
-            <p class="campaign">Erdbeben in Venezuela · Nothilfe für Kinder unterstützen</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.unicef.de" target="_blank" rel="noopener">www.unicef.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:spendenservice@unicef.de">spendenservice@unicef.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+4922193650399">+49 221 93650-399</a></div>
-              <div><strong>Contacto</strong>Spendenservice UNICEF Deutschland</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://helfen.unicef.de/venezuela" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.unicef.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="care deutschland venezuela spenden hilfe online spenden">
-            <div class="card-top">
-              <span class="tag">ONG</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>CARE Deutschland e.V.</h3>
-            <p class="campaign">Menschen in Venezuela helfen · Online-Spenden</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.care.de" target="_blank" rel="noopener">www.care.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:spenden@care.de">spenden@care.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+492289756326">+49 228 97563-26</a></div>
-              <div><strong>Contacto</strong>Spendenservice CARE</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.care.de/helfen/online-spenden/instagram-venezuela/?code=A3276" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.care.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="gohr emergencia" data-keywords="gohr guardians of human rights europe venezuela hospitales victimas terremoto">
-            <div class="card-top">
-              <span class="tag">GOHR Europe</span>
-              <span class="country">Europa</span>
-            </div>
-            <h3>Guardians of Human Rights Foundation</h3>
-            <p class="campaign">Help Venezuela · Ayuda a hospitales y víctimas</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://gohumanrights.com" target="_blank" rel="noopener">gohumanrights.com</a></div>
-              <div><strong>Correo oficial</strong><a href="mailto:europa@gohumanrights.com">europa@gohumanrights.com</a></div>
-              <div><strong>Teléfono Alemania</strong><a href="tel:+4917630412907">+49 176 30412907</a></div>
-              <div><strong>Teléfono USA</strong><a href="tel:+17863676895">+1 786 3676895</a></div>
-              <div><strong>Contacto</strong>GOHR Europe</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://gohumanrights.com/help-venezuela/" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://gohumanrights.com" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="help hilfe zur selbsthilfe venezuela spendenservice erdbeben">
-            <div class="card-top">
-              <span class="tag">ONG</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Help – Hilfe zur Selbsthilfe e.V.</h3>
-            <p class="campaign">Gemeinsam für Menschen in Not · Jetzt spenden</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.help-ev.de" target="_blank" rel="noopener">www.help-ev.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:spendenservice@help-ev.de">spendenservice@help-ev.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+492289152945">+49 228 91529-45</a></div>
-              <div><strong>Contacto</strong>Spendenservice</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.help-ev.de/spenden/?fb_item_id=97181?donation_custom_field_2115%3D26smad0106&utm_id=120248180346900082" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.help-ev.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania infancia emergencia" data-keywords="world vision deutschland katastrophenhilfe venezuela serviceteam">
-            <div class="card-top">
-              <span class="tag">Infancia</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>World Vision Deutschland e.V.</h3>
-            <p class="campaign">Katastrophenhilfe für Venezuela Erdbeben</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.worldvision.de" target="_blank" rel="noopener">www.worldvision.de</a></div>
-              <div><strong>Correo</strong>Consultar formulario oficial</div>
-              <div><strong>Teléfono</strong><a href="tel:08000102022">0800 0 10 20 22</a></div>
-              <div><strong>Contacto</strong>World Vision-Serviceteam</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.worldvision.de/spenden/venezuela?utm_id=406800" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.worldvision.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="onu emergencia" data-keywords="uno flüchtlingshilfe refugiados venezuela florian rühmann fundraising">
-            <div class="card-top">
-              <span class="tag">ONU / Refugio</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>UNO-Flüchtlingshilfe e.V.</h3>
-            <p class="campaign">Schwere Erdbeben in Venezuela · Flüchtlingshilfe weltweit</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.uno-fluechtlingshilfe.de" target="_blank" rel="noopener">www.uno-fluechtlingshilfe.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:info@uno-fluechtlingshilfe.de">info@uno-fluechtlingshilfe.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+4922890908600">+49 228 90 90 86-00</a></div>
-              <div><strong>Contacto</strong>Florian Rühmann, Fundraising Direktor</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.uno-fluechtlingshilfe.de/spenden/venezuela" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.uno-fluechtlingshilfe.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="onu emergencia" data-keywords="wfp world food programme alimentos venezuela supportercare">
-            <div class="card-top">
-              <span class="tag">ONU / Alimentos</span>
-              <span class="country">Internacional</span>
-            </div>
-            <h3>World Food Programme</h3>
-            <p class="campaign">Spenden Sie Nahrung · Retten Sie Leben</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://de.wfp.org" target="_blank" rel="noopener">de.wfp.org</a></div>
-              <div><strong>Correo</strong><a href="mailto:supportercare@wfp.org">supportercare@wfp.org</a></div>
-              <div><strong>Teléfono</strong>No visible públicamente</div>
-              <div><strong>Contacto</strong>Supporter Care</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://donate.wfp.org/de/1244/donation/single/?campaign=5957&utm_cid=701SX00000i7kZRYAY&survey=true" target="_blank" rel="noopener">Donar DE</a>
-              <a class="btn btn-outline" href="https://donate.wfp.org/es/1244/donation/single?campaign=5942&utm_cid=701SX00000i7kZRYAY&survey=true" target="_blank" rel="noopener">Donar ES</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="onu emergencia" data-keywords="sharethemeal wfp venezuela alimentos campaña">
-            <div class="card-top">
-              <span class="tag">WFP App</span>
-              <span class="country">Internacional</span>
-            </div>
-            <h3>ShareTheMeal</h3>
-            <p class="campaign">Venezuela · Campaña de ayuda alimentaria</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://sharethemeal.org" target="_blank" rel="noopener">sharethemeal.org</a></div>
-              <div><strong>Correo</strong>Consultar sitio oficial</div>
-              <div><strong>Teléfono</strong>No visible públicamente</div>
-              <div><strong>Contacto</strong>Iniciativa de WFP</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://sharethemeal.org/es/campaigns/venezuela1?utm_id=%7B%7Bad.id%7D%7D&utm_placement=%7B%7Bplacement%7D%7D" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://sharethemeal.org" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania infancia emergencia" data-keywords="sos kinderdörfer kinder venezuela terremoto spenden">
-            <div class="card-top">
-              <span class="tag">Infancia</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>SOS-Kinderdörfer weltweit</h3>
-            <p class="campaign">Erdbeben in Venezuela · Jetzt Kindern helfen</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.sos-kinderdoerfer.de" target="_blank" rel="noopener">www.sos-kinderdoerfer.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:freunde@sos-kinderdoerfer.de">freunde@sos-kinderdoerfer.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:08005030300">0800 50 30 300</a></div>
-              <div><strong>Contacto</strong>Spenderdialog</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.sos-kinderdoerfer.de/informieren/hilfsprojekte/erdbeben-in-venezuela-jetzt-kindern-helfen" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.sos-kinderdoerfer.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="drk deutsches rotes kreuz venezuela erdbebenhilfe spenderservice">
-            <div class="card-top">
-              <span class="tag">Cruz Roja</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Deutsches Rotes Kreuz</h3>
-            <p class="campaign">Venezuela: Erdbebenhilfe</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.drk.de" target="_blank" rel="noopener">www.drk.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:spenderservice@drk.de">spenderservice@drk.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+493085404444">030 85 404-444</a></div>
-              <div><strong>Contacto</strong>Spenderservice DRK</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.drk.de/hilfe-weltweit/wo-wir-helfen/lateinamerika/venezuela-erdbebenhilfe/?partnerid=01" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.drk.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="diakonie katastrophenhilfe venezuela erdbeben nothilfe service">
-            <div class="card-top">
-              <span class="tag">Ayuda humanitaria</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Diakonie Katastrophenhilfe</h3>
-            <p class="campaign">Venezuela: Nach dem Erdbeben spenden und helfen</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.diakonie-katastrophenhilfe.de" target="_blank" rel="noopener">www.diakonie-katastrophenhilfe.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:service@diakonie-katastrophenhilfe.de">service@diakonie-katastrophenhilfe.de</a></div>
-              <div><strong>Teléfono</strong>Consultar sitio oficial</div>
-              <div><strong>Contacto</strong>Servicio general</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.diakonie-katastrophenhilfe.de/projekte/venezuela-erdbeben" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.diakonie-katastrophenhilfe.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="malteser hilfsdienst venezuela spenden helfen">
-            <div class="card-top">
-              <span class="tag">Ayuda humanitaria</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Malteser Hilfsdienst e.V.</h3>
-            <p class="campaign">Spenden & Helfen · Venezuela</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.malteser.de" target="_blank" rel="noopener">www.malteser.de</a></div>
-              <div><strong>Correo</strong>Usar formulario oficial</div>
-              <div><strong>Teléfono</strong><a href="tel:+4922198220">+49 221 9822-0</a></div>
-              <div><strong>Contacto</strong>Zentrale Malteser</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.malteser.de/spenden-helfen/online-spenden-facebook.html?fb_item_id=97207" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.malteser.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania infancia emergencia" data-keywords="save the children deutschland erdbeben venezuela spendenservice">
-            <div class="card-top">
-              <span class="tag">Infancia</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Save the Children Deutschland e.V.</h3>
-            <p class="campaign">Spenden Erdbeben Venezuela</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.savethechildren.de" target="_blank" rel="noopener">www.savethechildren.de</a></div>
-              <div><strong>Correo</strong><a href="mailto:spendenservice@savethechildren.de">spendenservice@savethechildren.de</a></div>
-              <div><strong>Teléfono</strong><a href="tel:+49302759597979">+49 30 27 59 59 79 79</a></div>
-              <div><strong>Contacto</strong>Spendenservice</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.savethechildren.de/erdbeben-venezuela-fb/" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.savethechildren.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="franziskaner helfen missionszentrale erdbeben venezuela nothilfe familien">
-            <div class="card-top">
-              <span class="tag">Ayuda humanitaria</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Franziskaner Helfen</h3>
-            <p class="campaign">Erdbeben in Venezuela: Nothilfe für betroffene Familien</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://franziskaner-helfen.de" target="_blank" rel="noopener">franziskaner-helfen.de</a></div>
-              <div><strong>Correo</strong>No visible públicamente; el sitio muestra dirección protegida</div>
-              <div><strong>Teléfono</strong><a href="tel:+49228953540">+49 228 95354-0</a></div>
-              <div><strong>Contacto</strong>Team im Spendenservice</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://franziskaner-helfen.de/projekte/erdbeben-venezuela-nothilfe/?utm_id=120272412713500555" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://franziskaner-helfen.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia" data-keywords="aktion deutschland hilft erdbeben venezuela spenden jetzt nothilfe bündnis hilfsorganisationen servicetelefon">
-            <div class="card-top">
-              <span class="tag">Alianza humanitaria</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>Aktion Deutschland Hilft</h3>
-            <p class="campaign">Erdbeben Venezuela: Spenden Sie jetzt!</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.aktion-deutschland-hilft.de" target="_blank" rel="noopener">www.aktion-deutschland-hilft.de</a></div>
-              <div><strong>Correo</strong>Usar formulario oficial de contacto</div>
-              <div><strong>Teléfono</strong><a href="tel:+4922824292444">+49 228 24292-444</a></div>
-              <div><strong>Contacto</strong>Spenderservice / Servicetelefon</div>
-              <div><strong>Cuenta publicada</strong>IBAN: DE62 3702 0500 0000 1020 30</div>
-              <div><strong>Concepto</strong>Erdbeben Venezuela</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.aktion-deutschland-hilft.de/de/hilfseinsaetze/erdbeben-venezuela-spenden-sie-jetzt/" target="_blank" rel="noopener">Donar</a>
-              <a class="btn btn-outline" href="https://www.aktion-deutschland-hilft.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="alemania emergencia fuente" data-keywords="tagesschau ard spendenkonten venezuela spendenkonto bündnis entwicklung hilft aktion deutschland hilft beh adh">
-            <div class="card-top">
-              <span class="tag">Fuente informativa</span>
-              <span class="country">Alemania</span>
-            </div>
-            <h3>tagesschau / ARD Spendenkonten</h3>
-            <p class="campaign">Spenden: Hilfe für die Menschen in Venezuela</p>
-            <div class="meta">
-              <div><strong>Sitio web</strong><a href="https://www.tagesschau.de" target="_blank" rel="noopener">www.tagesschau.de</a></div>
-              <div><strong>Tipo</strong>Listado informativo de cuentas de donación publicadas por ARD/tagesschau</div>
-              <div><strong>Cuenta principal publicada</strong>BEH und ADH · IBAN: DE53 200 400 600 200 400 600</div>
-              <div><strong>BIC</strong>COBADEFFXXX</div>
-              <div><strong>Banco</strong>Commerzbank</div>
-              <div><strong>Concepto</strong>ARD/ Venezuela</div>
-              <div><strong>Nota</strong>tagesschau no procesa donaciones; remite a organizaciones y cuentas publicadas.</div>
-            </div>
-            <div class="actions">
-              <a class="btn btn-blue" href="https://www.tagesschau.de/spendenkonten/spendenkonten-162.html" target="_blank" rel="noopener">Ver listado</a>
-              <a class="btn btn-outline" href="https://www.tagesschau.de" target="_blank" rel="noopener">Sitio oficial</a>
-            </div>
-          </article>
-
-        </div>
+        <div id="directoryContainer"></div>
 
         <div id="noResults" class="no-results">
-          No se encontraron organizaciones o fuentes con ese criterio de búsqueda.
+          No se encontraron organizaciones, campañas o fuentes con ese criterio de búsqueda.
         </div>
       </section>
 
@@ -1144,11 +911,11 @@
         </h2>
 
         <p class="lang-es">
-          Difundir información verificada permite que la ayuda llegue por canales oficiales y reduce el riesgo de desinformación o enlaces no confiables.
+          Difundir información verificada permite que la ayuda llegue por canales más seguros y reduce el riesgo de desinformación o enlaces no confiables.
         </p>
 
         <p class="lang-de hidden">
-          Die Verbreitung geprüfter Informationen hilft, Unterstützung über offizielle Kanäle zu leiten und das Risiko von Desinformation oder unseriösen Links zu verringern.
+          Die Verbreitung geprüfter Informationen hilft, Unterstützung über sichere Kanäle zu leiten und das Risiko von Desinformation oder unseriösen Links zu verringern.
         </p>
 
         <div class="share-buttons">
@@ -1183,11 +950,15 @@
           </h2>
 
           <p class="lang-es">
-            Este sitio únicamente recopila y organiza información pública disponible en páginas oficiales de organizaciones, fuentes informativas y campañas de ayuda humanitaria. Guardians of Human Rights Foundation, GOHR Europe y el administrador de esta página no procesan donaciones, no intermedian pagos y no garantizan cambios, actualizaciones o disponibilidad de información publicada por terceros. La decisión de donar corresponde exclusivamente a cada usuario, bajo su propio criterio y responsabilidad.
+            Este sitio recopila y organiza información pública disponible en páginas oficiales, plataformas de donación, campañas públicas y fuentes informativas.
+            Guardians of Human Rights Foundation, GOHR Europe y el administrador de esta página no procesan donaciones, no intermedian pagos y no garantizan cambios,
+            actualizaciones o disponibilidad de información publicada por terceros. La decisión de donar corresponde exclusivamente a cada usuario, bajo su propio criterio y responsabilidad.
           </p>
 
           <p class="lang-de hidden">
-            Diese Seite sammelt und ordnet ausschließlich öffentlich verfügbare Informationen von offiziellen Webseiten, Informationsquellen, humanitären Organisationen und Hilfskampagnen. Guardians of Human Rights Foundation, GOHR Europe und der Betreiber dieser Seite verarbeiten keine Spenden, vermitteln keine Zahlungen und übernehmen keine Garantie für Änderungen, Aktualisierungen oder die Verfügbarkeit von Informationen Dritter. Die Entscheidung zu spenden liegt ausschließlich bei den Nutzerinnen und Nutzern in eigener Verantwortung.
+            Diese Seite sammelt und ordnet öffentlich verfügbare Informationen aus offiziellen Webseiten, Spendenplattformen, öffentlichen Kampagnen und Informationsquellen.
+            Guardians of Human Rights Foundation, GOHR Europe und der Betreiber dieser Seite verarbeiten keine Spenden, vermitteln keine Zahlungen und übernehmen keine Garantie für Änderungen,
+            Aktualisierungen oder die Verfügbarkeit von Informationen Dritter. Die Entscheidung zu spenden liegt ausschließlich bei den Nutzerinnen und Nutzern in eigener Verantwortung.
           </p>
         </article>
       </section>
@@ -1198,105 +969,694 @@
   <footer>
     <div class="container">
       <span class="lang-es">
-        Directorio informativo de campañas oficiales de ayuda humanitaria para Venezuela · GOHR Europe
+        Directorio informativo de ayuda humanitaria para Venezuela · GOHR Europe
       </span>
       <span class="lang-de hidden">
-        Informationsverzeichnis offizieller humanitärer Hilfskampagnen für Venezuela · GOHR Europe
+        Informationsverzeichnis humanitärer Hilfe für Venezuela · GOHR Europe
       </span>
     </div>
   </footer>
 
   <script>
-    function setLanguage(language) {
-      const esElements = document.querySelectorAll('.lang-es');
-      const deElements = document.querySelectorAll('.lang-de');
-      const btnEs = document.getElementById('btnEs');
-      const btnDe = document.getElementById('btnDe');
-      const searchInput = document.getElementById('searchInput');
-      const categoryFilter = document.getElementById('categoryFilter');
-
-      if (language === 'de') {
-        esElements.forEach(el => el.classList.add('hidden'));
-        deElements.forEach(el => el.classList.remove('hidden'));
-        btnEs.classList.remove('active');
-        btnDe.classList.add('active');
-        document.documentElement.lang = 'de';
-        searchInput.placeholder = 'Organisation, Kampagne, Quelle oder Kontakt suchen...';
-
-        categoryFilter.options[0].text = 'Alle Organisationen und Quellen';
-        categoryFilter.options[1].text = 'GOHR';
-        categoryFilter.options[2].text = 'UN-System / Vereinte Nationen';
-        categoryFilter.options[3].text = 'Organisationen mit Sitz oder Präsenz in Deutschland';
-        categoryFilter.options[4].text = 'Kinder und Familien';
-        categoryFilter.options[5].text = 'Humanitäre Nothilfe';
-        categoryFilter.options[6].text = 'Verlässliche Informationsquellen';
-      } else {
-        esElements.forEach(el => el.classList.remove('hidden'));
-        deElements.forEach(el => el.classList.add('hidden'));
-        btnEs.classList.add('active');
-        btnDe.classList.remove('active');
-        document.documentElement.lang = 'es';
-        searchInput.placeholder = 'Buscar organización, campaña, fuente o contacto...';
-
-        categoryFilter.options[0].text = 'Todas las organizaciones y fuentes';
-        categoryFilter.options[1].text = 'GOHR';
-        categoryFilter.options[2].text = 'Sistema ONU / Naciones Unidas';
-        categoryFilter.options[3].text = 'Organizaciones con sede o presencia en Alemania';
-        categoryFilter.options[4].text = 'Infancia y familias';
-        categoryFilter.options[5].text = 'Emergencia humanitaria';
-        categoryFilter.options[6].text = 'Fuentes informativas verificables';
+    const entries = [
+      {
+        name: "Aktion Deutschland Hilft",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "Alianza humanitaria",
+        tagType: "official",
+        campaign: "Erdbeben Venezuela: Spenden Sie jetzt!",
+        site: "www.aktion-deutschland-hilft.de",
+        siteUrl: "https://www.aktion-deutschland-hilft.de",
+        email: "Usar formulario oficial de contacto",
+        phone: "+49 228 24292-444",
+        phoneUrl: "tel:+4922824292444",
+        contact: "Spenderservice / Servicetelefon",
+        details: [
+          ["Cuenta publicada", "IBAN: DE62 3702 0500 0000 1020 30"],
+          ["BIC", "BFSWDE33XXX"],
+          ["Banco", "SozialBank"],
+          ["Concepto", "Erdbeben Venezuela"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.aktion-deutschland-hilft.de/de/hilfseinsaetze/erdbeben-venezuela-spenden-sie-jetzt/",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.aktion-deutschland-hilft.de",
+        keywords: "aktion deutschland hilft erdbeben venezuela spenden jetzt nothilfe bündnis hilfsorganisationen servicetelefon iban"
+      },
+      {
+        name: "CARE Deutschland e.V.",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "ONG",
+        tagType: "official",
+        campaign: "Menschen in Venezuela helfen · Online-Spenden",
+        site: "www.care.de",
+        siteUrl: "https://www.care.de",
+        email: "spenden@care.de",
+        phone: "+49 228 97563-26",
+        phoneUrl: "tel:+492289756326",
+        contact: "Spendenservice CARE",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.care.de/helfen/online-spenden/instagram-venezuela/?code=A3276",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.care.de",
+        keywords: "care deutschland venezuela spenden hilfe online spenden"
+      },
+      {
+        name: "Deutsches Rotes Kreuz",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "Cruz Roja",
+        tagType: "official",
+        campaign: "Venezuela: Erdbebenhilfe",
+        site: "www.drk.de",
+        siteUrl: "https://www.drk.de",
+        email: "spenderservice@drk.de",
+        phone: "030 85 404-444",
+        phoneUrl: "tel:+493085404444",
+        contact: "Spenderservice DRK",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.drk.de/hilfe-weltweit/wo-wir-helfen/lateinamerika/venezuela-erdbebenhilfe/?partnerid=01",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.drk.de",
+        keywords: "drk deutsches rotes kreuz venezuela erdbebenhilfe spenderservice"
+      },
+      {
+        name: "Diakonie Katastrophenhilfe",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "Ayuda humanitaria",
+        tagType: "official",
+        campaign: "Venezuela: Nach dem Erdbeben spenden und helfen",
+        site: "www.diakonie-katastrophenhilfe.de",
+        siteUrl: "https://www.diakonie-katastrophenhilfe.de",
+        email: "service@diakonie-katastrophenhilfe.de",
+        phone: "Consultar sitio oficial",
+        phoneUrl: "",
+        contact: "Servicio general",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.diakonie-katastrophenhilfe.de/projekte/venezuela-erdbeben",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.diakonie-katastrophenhilfe.de",
+        keywords: "diakonie katastrophenhilfe venezuela erdbeben nothilfe service"
+      },
+      {
+        name: "Franziskaner Helfen",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "Ayuda humanitaria",
+        tagType: "official",
+        campaign: "Erdbeben in Venezuela: Nothilfe für betroffene Familien",
+        site: "franziskaner-helfen.de",
+        siteUrl: "https://franziskaner-helfen.de",
+        email: "No visible públicamente; el sitio muestra dirección protegida",
+        phone: "+49 228 95354-0",
+        phoneUrl: "tel:+49228953540",
+        contact: "Team im Spendenservice",
+        details: [
+          ["Cuenta publicada por tagesschau", "IBAN: DE83 3705 0198 0025 0014 47"],
+          ["BIC", "COLSDE33XXX"],
+          ["Concepto", "Erdbeben Venezuela"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://franziskaner-helfen.de/projekte/erdbeben-venezuela-nothilfe/?utm_id=120272412713500555",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://franziskaner-helfen.de",
+        keywords: "franziskaner helfen missionszentrale erdbeben venezuela nothilfe familien"
+      },
+      {
+        name: "Help – Hilfe zur Selbsthilfe e.V.",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "ONG",
+        tagType: "official",
+        campaign: "Gemeinsam für Menschen in Not · Jetzt spenden",
+        site: "www.help-ev.de",
+        siteUrl: "https://www.help-ev.de",
+        email: "spendenservice@help-ev.de",
+        phone: "+49 228 91529-45",
+        phoneUrl: "tel:+492289152945",
+        contact: "Spendenservice",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.help-ev.de/spenden/?fb_item_id=97181?donation_custom_field_2115%3D26smad0106&utm_id=120248180346900082",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.help-ev.de",
+        keywords: "help hilfe zur selbsthilfe venezuela spendenservice erdbeben"
+      },
+      {
+        name: "Idelay Angulo / GoFundMe",
+        country: "Alemania",
+        categories: ["crowdfunding", "emergencia"],
+        tag: "Crowdfunding",
+        tagType: "crowdfunding",
+        campaign: "TERREMOTO VENEZUELA",
+        site: "www.gofundme.com",
+        siteUrl: "https://www.gofundme.com",
+        email: "No visible públicamente",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "Organizadora: Idelay Angulo · Essen, Nordrhein-Westfalen",
+        details: [
+          ["Tipo", "Campaña particular publicada en GoFundMe"],
+          ["Categoría", "Emergencias"],
+          ["Fecha visible", "25 de junio de 2026"],
+          ["Destino declarado", "Ropa, comida, gastos médicos e insumos para afectados"]
+        ],
+        note: "Campaña pública de crowdfunding. Antes de donar, revisar directamente la página de GoFundMe, el organizador, las actualizaciones y las condiciones de la plataforma.",
+        donateText: "Ver campaña",
+        donateUrl: "https://www.gofundme.com/f/crmx4-terremoto-venezuela?lang=es_ES",
+        secondaryText: "GoFundMe",
+        secondaryUrl: "https://www.gofundme.com",
+        keywords: "gofundme idelay angulo terremoto venezuela essen nordrhein westfalen emergencia crowdfunding"
+      },
+      {
+        name: "Malteser Hilfsdienst e.V.",
+        country: "Alemania",
+        categories: ["oficial", "emergencia"],
+        tag: "Ayuda humanitaria",
+        tagType: "official",
+        campaign: "Spenden & Helfen · Venezuela",
+        site: "www.malteser.de",
+        siteUrl: "https://www.malteser.de",
+        email: "Usar formulario oficial",
+        phone: "+49 221 9822-0",
+        phoneUrl: "tel:+4922198220",
+        contact: "Zentrale Malteser",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.malteser.de/spenden-helfen/online-spenden-facebook.html?fb_item_id=97207",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.malteser.de",
+        keywords: "malteser hilfsdienst venezuela spenden helfen"
+      },
+      {
+        name: "Save the Children Deutschland e.V.",
+        country: "Alemania",
+        categories: ["oficial", "infancia", "emergencia"],
+        tag: "Infancia",
+        tagType: "official",
+        campaign: "Spenden Erdbeben Venezuela",
+        site: "www.savethechildren.de",
+        siteUrl: "https://www.savethechildren.de",
+        email: "spendenservice@savethechildren.de",
+        phone: "+49 30 27 59 59 79 79",
+        phoneUrl: "tel:+49302759597979",
+        contact: "Spendenservice",
+        details: [
+          ["Cuenta publicada por tagesschau", "IBAN: DE96 3702 0500 0003 2929 12"],
+          ["BIC", "BFSWDE33XXX"],
+          ["Banco", "SozialBank"],
+          ["Concepto", "Erdbeben Venezuela"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.savethechildren.de/erdbeben-venezuela-fb/",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.savethechildren.de",
+        keywords: "save the children deutschland erdbeben venezuela spendenservice kinder"
+      },
+      {
+        name: "SOS-Kinderdörfer weltweit",
+        country: "Alemania",
+        categories: ["oficial", "infancia", "emergencia"],
+        tag: "Infancia",
+        tagType: "official",
+        campaign: "Erdbeben in Venezuela · Jetzt Kindern helfen",
+        site: "www.sos-kinderdoerfer.de",
+        siteUrl: "https://www.sos-kinderdoerfer.de",
+        email: "freunde@sos-kinderdoerfer.de",
+        phone: "0800 50 30 300",
+        phoneUrl: "tel:08005030300",
+        contact: "Spenderdialog",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.sos-kinderdoerfer.de/informieren/hilfsprojekte/erdbeben-in-venezuela-jetzt-kindern-helfen",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.sos-kinderdoerfer.de",
+        keywords: "sos kinderdörfer kinder venezuela terremoto spenden"
+      },
+      {
+        name: "tagesschau / ARD Spendenkonten",
+        country: "Alemania",
+        categories: ["fuente", "emergencia"],
+        tag: "Fuente informativa",
+        tagType: "source",
+        campaign: "Spenden: Hilfe für die Menschen in Venezuela",
+        site: "www.tagesschau.de",
+        siteUrl: "https://www.tagesschau.de",
+        email: "No aplica",
+        phone: "No aplica",
+        phoneUrl: "",
+        contact: "Listado informativo de ARD/tagesschau",
+        details: [
+          ["BEH und ADH", "IBAN: DE53 200 400 600 200 400 600"],
+          ["BIC", "COBADEFFXXX"],
+          ["Banco", "Commerzbank"],
+          ["Concepto", "ARD/ Venezuela"],
+          ["Nota", "tagesschau no procesa donaciones; publica cuentas y enlaces de organizaciones"]
+        ],
+        note: "Fuente informativa. Verificar siempre los datos bancarios directamente en tagesschau o en la organización correspondiente antes de transferir.",
+        donateText: "Ver listado",
+        donateUrl: "https://www.tagesschau.de/spendenkonten/spendenkonten-162.html",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.tagesschau.de",
+        keywords: "tagesschau ard spendenkonten venezuela spendenkonto bündnis entwicklung hilft aktion deutschland hilft beh adh"
+      },
+      {
+        name: "UNICEF Deutschland",
+        country: "Alemania",
+        categories: ["oficial", "onu", "infancia", "emergencia"],
+        tag: "ONU / Infancia",
+        tagType: "official",
+        campaign: "Erdbeben in Venezuela · Nothilfe für Kinder unterstützen",
+        site: "www.unicef.de",
+        siteUrl: "https://www.unicef.de",
+        email: "spendenservice@unicef.de",
+        phone: "+49 221 93650-399",
+        phoneUrl: "tel:+4922193650399",
+        contact: "Spendenservice UNICEF Deutschland",
+        details: [
+          ["Cuenta publicada por tagesschau", "IBAN: DE57 3702 0500 0000 3000 00"],
+          ["BIC", "BFSWDE33XXX"],
+          ["Banco", "Bank für Sozialwirtschaft"],
+          ["Concepto", "Erdbeben Venezuela"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://helfen.unicef.de/venezuela",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.unicef.de",
+        keywords: "unicef deutschland erdbeben venezuela kinder spendenservice"
+      },
+      {
+        name: "UNO-Flüchtlingshilfe e.V.",
+        country: "Alemania",
+        categories: ["oficial", "onu", "emergencia"],
+        tag: "ONU / Refugio",
+        tagType: "official",
+        campaign: "Schwere Erdbeben in Venezuela · Flüchtlingshilfe weltweit",
+        site: "www.uno-fluechtlingshilfe.de",
+        siteUrl: "https://www.uno-fluechtlingshilfe.de",
+        email: "info@uno-fluechtlingshilfe.de",
+        phone: "+49 228 90 90 86-00",
+        phoneUrl: "tel:+4922890908600",
+        contact: "Florian Rühmann, Fundraising Direktor",
+        details: [
+          ["Cuenta publicada por tagesschau", "IBAN: DE78 3705 0198 0020 0088 50"],
+          ["BIC", "COLSDE33"],
+          ["Banco", "Sparkasse KölnBonn"],
+          ["Concepto", "Erdbeben Venezuela"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.uno-fluechtlingshilfe.de/spenden/venezuela",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.uno-fluechtlingshilfe.de",
+        keywords: "uno flüchtlingshilfe refugiados venezuela florian rühmann fundraising"
+      },
+      {
+        name: "World Vision Deutschland e.V.",
+        country: "Alemania",
+        categories: ["oficial", "infancia", "emergencia"],
+        tag: "Infancia",
+        tagType: "official",
+        campaign: "Katastrophenhilfe für Venezuela Erdbeben",
+        site: "www.worldvision.de",
+        siteUrl: "https://www.worldvision.de",
+        email: "Consultar formulario oficial",
+        phone: "0800 0 10 20 22",
+        phoneUrl: "tel:08000102022",
+        contact: "World Vision-Serviceteam",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://www.worldvision.de/spenden/venezuela?utm_id=406800",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://www.worldvision.de",
+        keywords: "world vision deutschland katastrophenhilfe venezuela serviceteam"
+      },
+      {
+        name: "Herbalife Family Foundation",
+        country: "Estados Unidos",
+        categories: ["oficial", "emergencia", "infancia"],
+        tag: "Fundación",
+        tagType: "official",
+        campaign: "Stronger Together: Venezuela Earthquake Relief",
+        site: "give.herbalifefamilyfoundation.org",
+        siteUrl: "https://give.herbalifefamilyfoundation.org/campaign/815812/donate",
+        email: "HFF@herbalife.com",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "Donor Support",
+        details: [
+          ["Nombre en español", "Más fuertes juntos: Ayuda para Venezuela tras el terremoto"],
+          ["Meta publicada", "USD 100,000"],
+          ["Estatus fiscal indicado", "501(c)(3) tax-exempt organization"],
+          ["Dirección visible", "800 W. Olympic Blvd., Suite 406, Los Angeles, California 90028"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://give.herbalifefamilyfoundation.org/campaign/815812/donate",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://herbalifefamilyfoundation.org",
+        keywords: "herbalife family foundation stronger together venezuela earthquake relief donativo hff los angeles"
+      },
+      {
+        name: "I Love Venezuela Foundation / GoFundMe",
+        country: "Estados Unidos",
+        categories: ["oficial", "crowdfunding", "emergencia"],
+        tag: "Fundación / GoFundMe",
+        tagType: "crowdfunding",
+        campaign: "Emergency Relief for Venezuela Earthquake Victims",
+        site: "www.gofundme.com",
+        siteUrl: "https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims",
+        email: "Consultar sitio web o redes oficiales",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "I Love Venezuela Foundation · Miami, FL",
+        details: [
+          ["Beneficiario visible", "I LOVE VENEZUELA FOUNDATION, INC"],
+          ["Organización", "We Love Foundation Inc., doing business as I Love Venezuela Foundation"],
+          ["Sitio indicado", "www.welove.foundation"],
+          ["Red social indicada", "@welove_foundation"],
+          ["Destino declarado", "Alimentos, agua potable, asistencia médica, suministros, kits de higiene, refugio temporal, logística y ayuda directa"]
+        ],
+        note: "Campaña en GoFundMe asociada a una fundación. Revisar directamente la página de GoFundMe, las actualizaciones, el beneficiario y las condiciones de la plataforma antes de donar.",
+        donateText: "Ver campaña",
+        donateUrl: "https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims",
+        secondaryText: "Sitio fundación",
+        secondaryUrl: "https://www.welove.foundation",
+        keywords: "i love venezuela foundation gofundme emergency relief earthquake victims miami we love foundation global empowerment mission"
+      },
+      {
+        name: "Guardians of Human Rights Foundation",
+        country: "Europa",
+        categories: ["gohr", "oficial", "emergencia"],
+        tag: "GOHR Europe",
+        tagType: "official",
+        campaign: "Help Venezuela · Ayuda a hospitales y víctimas",
+        site: "gohumanrights.com",
+        siteUrl: "https://gohumanrights.com",
+        email: "europa@gohumanrights.com",
+        phone: "+49 176 30412907",
+        phoneUrl: "tel:+4917630412907",
+        contact: "GOHR Europe",
+        details: [
+          ["Teléfono USA", "+1 786 3676895"]
+        ],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://gohumanrights.com/help-venezuela/",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://gohumanrights.com",
+        keywords: "gohr guardians of human rights europe venezuela hospitales victimas terremoto"
+      },
+      {
+        name: "ShareTheMeal",
+        country: "Internacional / Sistema ONU",
+        categories: ["oficial", "onu", "emergencia"],
+        tag: "WFP App",
+        tagType: "official",
+        campaign: "Venezuela · Campaña de ayuda alimentaria",
+        site: "sharethemeal.org",
+        siteUrl: "https://sharethemeal.org",
+        email: "Consultar sitio oficial",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "Iniciativa de WFP",
+        details: [],
+        note: "",
+        donateText: "Donar",
+        donateUrl: "https://sharethemeal.org/es/campaigns/venezuela1?utm_id=%7B%7Bad.id%7D%7D&utm_placement=%7B%7Bplacement%7D%7D",
+        secondaryText: "Sitio oficial",
+        secondaryUrl: "https://sharethemeal.org",
+        keywords: "sharethemeal wfp venezuela alimentos campaña"
+      },
+      {
+        name: "World Food Programme",
+        country: "Internacional / Sistema ONU",
+        categories: ["oficial", "onu", "emergencia"],
+        tag: "ONU / Alimentos",
+        tagType: "official",
+        campaign: "Spenden Sie Nahrung · Retten Sie Leben",
+        site: "de.wfp.org",
+        siteUrl: "https://de.wfp.org",
+        email: "supportercare@wfp.org",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "Supporter Care",
+        details: [],
+        note: "",
+        donateText: "Donar DE",
+        donateUrl: "https://donate.wfp.org/de/1244/donation/single/?campaign=5957&utm_cid=701SX00000i7kZRYAY&survey=true",
+        secondaryText: "Donar ES",
+        secondaryUrl: "https://donate.wfp.org/es/1244/donation/single?campaign=5942&utm_cid=701SX00000i7kZRYAY&survey=true",
+        keywords: "wfp world food programme alimentos venezuela supportercare"
+      },
+      {
+        name: "Healing Venezuela / JustGiving",
+        country: "Reino Unido",
+        categories: ["oficial", "crowdfunding", "emergencia"],
+        tag: "Charity / JustGiving",
+        tagType: "crowdfunding",
+        campaign: "Emergency Appeal - Earthquake in Venezuela",
+        site: "www.justgiving.com",
+        siteUrl: "https://www.justgiving.com/campaign/venezuelaearthquake2026",
+        email: "Consultar sitio oficial",
+        phone: "No visible públicamente",
+        phoneUrl: "",
+        contact: "Healing Venezuela · Verified by JustGiving",
+        details: [
+          ["Registro", "RCN 1170709"],
+          ["Organización", "UK based charity focused on alleviating the health crisis in Venezuela"],
+          ["Destino declarado", "Hospitales, médicos, servicios de rescate, insumos médicos y respuesta de emergencia"]
+        ],
+        note: "Campaña publicada en JustGiving para Healing Venezuela. Revisar directamente la página de JustGiving, la organización receptora, las actualizaciones y las condiciones de la plataforma antes de donar.",
+        donateText: "Donar",
+        donateUrl: "https://donate.justgiving.com/campaign/venezuelaearthquake2026/donation-amount",
+        secondaryText: "Ver campaña",
+        secondaryUrl: "https://www.justgiving.com/campaign/venezuelaearthquake2026",
+        keywords: "healing venezuela justgiving emergency appeal earthquake venezuela hospitals doctors rescue services rcn 1170709"
       }
+    ];
 
-      filterCards();
+    const countryOrder = [
+      "Alemania",
+      "Estados Unidos",
+      "Europa",
+      "Internacional / Sistema ONU",
+      "Reino Unido"
+    ];
+
+    function escapeHTML(value) {
+      return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
     }
 
     function normalizeText(text) {
-      return text
+      return String(text || "")
         .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '');
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
     }
 
-    function filterCards() {
-      const searchValue = normalizeText(document.getElementById('searchInput').value);
-      const selectedCategory = document.getElementById('categoryFilter').value;
-      const cards = document.querySelectorAll('.card');
-      const noResults = document.getElementById('noResults');
-      const resultCount = document.getElementById('resultCount');
+    function linkValue(value, url) {
+      const safeValue = escapeHTML(value);
+      const safeUrl = escapeHTML(url);
 
-      let visibleCount = 0;
+      if (!value) return "No visible públicamente";
+      if (url) return `<a href="${safeUrl}" target="_blank" rel="noopener">${safeValue}</a>`;
+      if (String(value).includes("@") && !String(value).includes(" ")) return `<a href="mailto:${safeValue}">${safeValue}</a>`;
+      return safeValue;
+    }
 
-      cards.forEach(card => {
-        const text = normalizeText(card.innerText + ' ' + card.dataset.keywords);
-        const categories = card.dataset.category || '';
+    function renderEntry(entry) {
+      const tagClass = entry.tagType === "crowdfunding" ? "crowdfunding" : entry.tagType === "source" ? "source" : "";
 
-        const matchesSearch = text.includes(searchValue);
-        const matchesCategory = selectedCategory === 'all' || categories.includes(selectedCategory);
+      const detailsHTML = (entry.details || [])
+        .map(([label, value]) => `
+          <div>
+            <strong>${escapeHTML(label)}</strong>
+            <span>${escapeHTML(value)}</span>
+          </div>
+        `)
+        .join("");
 
-        if (matchesSearch && matchesCategory) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
+      const noteHTML = entry.note
+        ? `<div class="warning-note">${escapeHTML(entry.note)}</div>`
+        : "";
+
+      return `
+        <article class="card" data-country="${escapeHTML(entry.country)}">
+          <div class="card-top">
+            <span class="tag ${tagClass}">${escapeHTML(entry.tag)}</span>
+            <span class="country">${escapeHTML(entry.country)}</span>
+          </div>
+
+          <h4>${escapeHTML(entry.name)}</h4>
+          <p class="campaign">${escapeHTML(entry.campaign)}</p>
+
+          <div class="meta">
+            <div>
+              <strong>Sitio web</strong>
+              ${linkValue(entry.site, entry.siteUrl)}
+            </div>
+            <div>
+              <strong>Correo</strong>
+              ${linkValue(entry.email, "")}
+            </div>
+            <div>
+              <strong>Teléfono</strong>
+              ${linkValue(entry.phone, entry.phoneUrl)}
+            </div>
+            <div>
+              <strong>Contacto</strong>
+              <span>${escapeHTML(entry.contact)}</span>
+            </div>
+            ${detailsHTML}
+          </div>
+
+          ${noteHTML}
+
+          <div class="actions">
+            <a class="btn btn-blue" href="${escapeHTML(entry.donateUrl)}" target="_blank" rel="noopener">${escapeHTML(entry.donateText)}</a>
+            <a class="btn btn-outline" href="${escapeHTML(entry.secondaryUrl)}" target="_blank" rel="noopener">${escapeHTML(entry.secondaryText)}</a>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderDirectory() {
+      const container = document.getElementById("directoryContainer");
+      const searchValue = normalizeText(document.getElementById("searchInput").value);
+      const selectedCountry = document.getElementById("countryFilter").value;
+      const selectedCategory = document.getElementById("categoryFilter").value;
+      const noResults = document.getElementById("noResults");
+      const resultCount = document.getElementById("resultCount");
+
+      const filtered = entries.filter(entry => {
+        const fullText = normalizeText([
+          entry.name,
+          entry.country,
+          entry.tag,
+          entry.campaign,
+          entry.site,
+          entry.email,
+          entry.phone,
+          entry.contact,
+          entry.keywords,
+          ...(entry.details || []).flat()
+        ].join(" "));
+
+        const matchesSearch = fullText.includes(searchValue);
+        const matchesCountry = selectedCountry === "all" || entry.country === selectedCountry;
+        const matchesCategory = selectedCategory === "all" || entry.categories.includes(selectedCategory);
+
+        return matchesSearch && matchesCountry && matchesCategory;
       });
 
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      const groupedHTML = countryOrder.map(country => {
+        const countryEntries = filtered
+          .filter(entry => entry.country === country)
+          .sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
+
+        if (countryEntries.length === 0) return "";
+
+        return `
+          <section class="country-section">
+            <div class="country-title">
+              <h3>${escapeHTML(country)}</h3>
+              <span class="country-count">${countryEntries.length} ${countryEntries.length === 1 ? "entrada" : "entradas"}</span>
+            </div>
+            <div class="grid">
+              ${countryEntries.map(renderEntry).join("")}
+            </div>
+          </section>
+        `;
+      }).join("");
+
+      container.innerHTML = groupedHTML;
+      noResults.style.display = filtered.length === 0 ? "block" : "none";
 
       const lang = document.documentElement.lang;
-      resultCount.textContent = lang === 'de'
-        ? visibleCount + ' Einträge angezeigt'
-        : visibleCount + ' entradas visibles';
+      resultCount.textContent = lang === "de"
+        ? filtered.length + " Einträge angezeigt"
+        : filtered.length + " entradas visibles";
+    }
+
+    function setLanguage(language) {
+      const esElements = document.querySelectorAll(".lang-es");
+      const deElements = document.querySelectorAll(".lang-de");
+      const btnEs = document.getElementById("btnEs");
+      const btnDe = document.getElementById("btnDe");
+      const searchInput = document.getElementById("searchInput");
+      const countryFilter = document.getElementById("countryFilter");
+      const categoryFilter = document.getElementById("categoryFilter");
+
+      if (language === "de") {
+        esElements.forEach(el => el.classList.add("hidden"));
+        deElements.forEach(el => el.classList.remove("hidden"));
+        btnEs.classList.remove("active");
+        btnDe.classList.add("active");
+        document.documentElement.lang = "de";
+        searchInput.placeholder = "Organisation, Kampagne, Land, Quelle oder Kontakt suchen...";
+
+        countryFilter.options[0].text = "Alle Länder";
+        categoryFilter.options[0].text = "Alle Kategorien";
+        categoryFilter.options[1].text = "Organisationen / institutionelle Kampagnen";
+        categoryFilter.options[2].text = "Crowdfunding / öffentliche Kampagnen";
+        categoryFilter.options[3].text = "Verlässliche Informationsquellen";
+        categoryFilter.options[4].text = "UN-System / Vereinte Nationen";
+        categoryFilter.options[5].text = "Kinder und Familien";
+        categoryFilter.options[6].text = "Humanitäre Nothilfe";
+        categoryFilter.options[7].text = "GOHR";
+      } else {
+        esElements.forEach(el => el.classList.remove("hidden"));
+        deElements.forEach(el => el.classList.add("hidden"));
+        btnEs.classList.add("active");
+        btnDe.classList.remove("active");
+        document.documentElement.lang = "es";
+        searchInput.placeholder = "Buscar organización, campaña, país, fuente o contacto...";
+
+        countryFilter.options[0].text = "Todos los países";
+        categoryFilter.options[0].text = "Todas las categorías";
+        categoryFilter.options[1].text = "Organizaciones / campañas institucionales";
+        categoryFilter.options[2].text = "Crowdfunding / campañas públicas";
+        categoryFilter.options[3].text = "Fuentes informativas verificables";
+        categoryFilter.options[4].text = "Sistema ONU / Naciones Unidas";
+        categoryFilter.options[5].text = "Infancia y familias";
+        categoryFilter.options[6].text = "Emergencia humanitaria";
+        categoryFilter.options[7].text = "GOHR";
+      }
+
+      renderDirectory();
     }
 
     function getShareText() {
       const lang = document.documentElement.lang;
 
-      if (lang === 'de') {
-        return 'Informationsverzeichnis mit offiziellen Spendenlinks und verlässlichen Quellen für humanitäre Hilfe in Venezuela: ';
+      if (lang === "de") {
+        return "Informationsverzeichnis mit offiziellen Spendenlinks, öffentlichen Kampagnen und verlässlichen Quellen für humanitäre Hilfe in Venezuela: ";
       }
 
-      return 'Directorio informativo con enlaces oficiales de donación y fuentes verificables para la ayuda humanitaria a Venezuela: ';
+      return "Directorio informativo con enlaces oficiales, campañas públicas y fuentes verificables para la ayuda humanitaria a Venezuela: ";
     }
 
     function getCurrentUrl() {
@@ -1305,26 +1665,26 @@
 
     function shareWhatsApp() {
       const text = encodeURIComponent(getShareText() + getCurrentUrl());
-      window.open('https://wa.me/?text=' + text, '_blank');
+      window.open("https://wa.me/?text=" + text, "_blank");
     }
 
     function shareX() {
       const text = encodeURIComponent(getShareText());
       const url = encodeURIComponent(getCurrentUrl());
-      window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank');
+      window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url, "_blank");
     }
 
     function shareTelegram() {
       const text = encodeURIComponent(getShareText());
       const url = encodeURIComponent(getCurrentUrl());
-      window.open('https://t.me/share/url?url=' + url + '&text=' + text, '_blank');
+      window.open("https://t.me/share/url?url=" + url + "&text=" + text, "_blank");
     }
 
     function copyLink() {
       navigator.clipboard.writeText(getCurrentUrl()).then(() => {
-        alert('Enlace copiado.');
+        alert("Enlace copiado.");
       }).catch(() => {
-        alert('Copia manualmente este enlace: ' + getCurrentUrl());
+        alert("Copia manualmente este enlace: " + getCurrentUrl());
       });
     }
 
@@ -1332,9 +1692,9 @@
       const text = getShareText() + getCurrentUrl();
 
       navigator.clipboard.writeText(text).then(() => {
-        alert('Texto copiado. Puedes pegarlo en una historia, publicación o biografía de Instagram.');
+        alert("Texto copiado. Puedes pegarlo en una historia, publicación o biografía de Instagram.");
       }).catch(() => {
-        alert('Copia manualmente este enlace: ' + getCurrentUrl());
+        alert("Copia manualmente este enlace: " + getCurrentUrl());
       });
     }
 
@@ -1342,13 +1702,13 @@
       const text = getShareText() + getCurrentUrl();
 
       navigator.clipboard.writeText(text).then(() => {
-        alert('Texto copiado. Puedes pegarlo en la descripción de TikTok o en tu biografía.');
+        alert("Texto copiado. Puedes pegarlo en la descripción de TikTok o en tu biografía.");
       }).catch(() => {
-        alert('Copia manualmente este enlace: ' + getCurrentUrl());
+        alert("Copia manualmente este enlace: " + getCurrentUrl());
       });
     }
 
-    document.addEventListener('DOMContentLoaded', filterCards);
+    document.addEventListener("DOMContentLoaded", renderDirectory);
   </script>
 
 </body>
